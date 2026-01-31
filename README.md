@@ -93,7 +93,7 @@ After reboot the system will automatically:
 
 ### 📱 Phone App Support
 
-ntfy apps are available on: Subscribe to your topic name.
+ntfy apps is available on: Subscribe to your topic name.
 
 - Apple App Store
 - Google Play Store
@@ -177,9 +177,7 @@ MIT License — Free to modify and share.
 
 ### ⭐ Credits
 
-` Created by Joel Chicas & Sergio Minera
+Created by Joel Chicas & Sergio Minera
 
-` Spotify Preview + Billboard JSON Integration
-` Raspberry Pi GPIO Hardware Control
-` pygame HDMI Display UI
+
 
