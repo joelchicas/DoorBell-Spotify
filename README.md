@@ -172,13 +172,14 @@ sudo systemctl restart doorbell_spotify
 ```
 
 ### 📜 License
+
 MIT License — Free to modify and share.
 
-###⭐ Credits
+### ⭐ Credits
+
 ` Created by Joel Chicas & Sergio Minera
 
 ` Spotify Preview + Billboard JSON Integration
-
 ` Raspberry Pi GPIO Hardware Control
-
 ` pygame HDMI Display UI
+
