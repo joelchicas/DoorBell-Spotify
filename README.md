@@ -115,9 +115,9 @@ Default GPIO pin:
 
 Wiring:
 
-Button one side → GPIO17
+Button one side → GPIO17 = Pin 11
 
-Button other side → GND
+Button other side → GND = Pin 6
 
 #### ⚙ Customization
 
@@ -186,6 +186,7 @@ MIT License — Free to modify and share.
 ### ⭐ Credits
 
 Created by Joel Chicas & Sergio Minera
+
 
 
 
