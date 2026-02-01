@@ -124,7 +124,7 @@ Button other side → GND = Pin 6
 ```
 #### ⚙ Customization
 
-Change Button GPIO Pin
+##### Change Button GPIO Pin
 ```
 Edit:
 doorbell_spotify.py
@@ -133,7 +133,7 @@ change:
 BUTTON_PIN = 17
 ```
 
-Change Audio Clip Length
+##### Change Audio Clip Length
 
 ```
 Edit:
@@ -146,7 +146,7 @@ Change:
 CLIP_LENGTH = 15
 ```
 
-Change Billboard Update Schedule
+##### Change Billboard Update Schedule
 
 ```
 Edit:
@@ -160,7 +160,7 @@ DOWNLOAD_WEEKDAY = 4   # Friday
 DOWNLOAD_HOUR = 12    # Noon
 ```
 
-No Audio Output?
+##### No Audio Output?
 
 ```
 List audio devices:
@@ -192,6 +192,7 @@ MIT License — Free to modify and share.
 #### ⭐ Credits
 
 Created by Joel Chicas & Sergio Minera
+
 
 
 
