@@ -82,7 +82,7 @@ sudo reboot
 
 ```
 
-### 🔄 Reboot
+## 🔄 Reboot
 
 After reboot the system will automatically:
 
@@ -91,7 +91,10 @@ After reboot the system will automatically:
 - Play random preview when pressed
 - Send push notifications
 
-### 📱 Phone App Support
+  ---
+
+
+## 📱 Phone App Support
 
 ntfy apps is available on: Subscribe to your topic name.
 
@@ -99,7 +102,9 @@ ntfy apps is available on: Subscribe to your topic name.
 - Google Play Store
 #### ntfy 
 
-### 🔌 GPIO Button Wiring
+---
+
+## 🔌 GPIO Button Wiring
 
 <p align="center">
   <img src="images/raspi-pinout.png" width="600">
@@ -179,13 +184,17 @@ sudo systemctl restart doorbell_spotify
 
 ```
 
-### 📜 License
+## 📜 License
 
 MIT License — Free to modify and share.
 
-### ⭐ Credits
+---
+
+
+#### ⭐ Credits
 
 Created by Joel Chicas & Sergio Minera
+
 
 
 
