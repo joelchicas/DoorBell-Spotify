@@ -101,6 +101,14 @@ ntfy apps is available on: Subscribe to your topic name.
 
 ### 🔌 GPIO Button Wiring
 
+<p align="center">
+  <img src="images/raspi-pinout.png" width="600">
+</p>
+
+<p align="center">
+  <img src="images/raspi-4.png" width="600">
+</p>
+
 Default GPIO pin:
 
 - GPIO 17
@@ -178,6 +186,7 @@ MIT License — Free to modify and share.
 ### ⭐ Credits
 
 Created by Joel Chicas & Sergio Minera
+
 
 
 
