@@ -1,0 +1,15 @@
+[Unit]
+Description=Doorbell Cache Updater
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 %h/doorbell_cache_updater.py
+WorkingDirectory=%h
+StandardOutput=journal
+StandardError=journal
+Type=oneshot
+User=%u
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
