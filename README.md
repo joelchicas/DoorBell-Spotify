@@ -114,16 +114,14 @@ ntfy apps is available on: Subscribe to your topic name.
   <img src="images/raspi-4.png" width="600">
 </p>
 
-Default GPIO pin:
+#### Default GPIO pin:
 
+```
 - GPIO 17
-
 Wiring:
-
 Button one side → GPIO17 = Pin 11
-
 Button other side → GND = Pin 6
-
+```
 #### ⚙ Customization
 
 Change Button GPIO Pin
@@ -194,6 +192,7 @@ MIT License — Free to modify and share.
 #### ⭐ Credits
 
 Created by Joel Chicas & Sergio Minera
+
 
 
 
