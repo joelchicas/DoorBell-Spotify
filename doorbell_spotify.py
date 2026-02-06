@@ -7,6 +7,7 @@ from gpiozero import Button
 import pygame
 import queue
 import subprocess
+import requests
 
 # ---------------- DISPLAY ENV ----------------
 os.environ["DISPLAY"] = ":0"
@@ -17,10 +18,10 @@ BUTTON_PIN = 17
 HOME = os.path.expanduser("~")
 CACHE_DIR = os.path.join(HOME, "doorbell_cache")
 PLAY_SECONDS = 15
-NOTIFY_URL = os.getenv("NTFY_URL")
+SLACK_WEBHOOK_URL = os.getenv("SLACK_WEBHOOK_URL")
 
-if not NOTIFY_URL:
-    raise ValueError("NTFY_URL environment variable not set")
+if not SLACK_WEBHOOK_URL:
+    raise ValueError("SLACK_WEBHOOK_URL environment variable not set")
 
 
 # ---------------- INIT ----------------
@@ -75,13 +76,22 @@ def load_sounds():
 
 # ---------------- NOTIFY FUNCTION ----------------
 def send_notification():
-    """Send a notification via curl when the doorbell is pressed"""
-    message = "Someone is at the Door"
+    """Send a Slack notification when the doorbell is pressed"""
+    payload = {
+        "text": "🔔 *Doorbell Pressed*\nSomeone is at the door."
+    }
+
     try:
-        subprocess.run(["curl", "-d", message, NOTIFY_URL], check=True)
-        print("Notification sent.")
-    except subprocess.CalledProcessError as e:
-        print(f"Failed to send notification: {e}")
+        response = requests.post(
+            SLACK_WEBHOOK_URL,
+            json=payload,
+            timeout=5
+        )
+        response.raise_for_status()
+        print("Slack notification sent.")
+    except requests.exceptions.RequestException as e:
+        print(f"Failed to send Slack notification: {e}")
+
 
 # ---------------- BUTTON HANDLER ----------------
 event_queue = queue.Queue()
