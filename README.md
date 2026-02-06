@@ -7,7 +7,7 @@ A Raspberry Pi powered smart doorbell that:
 - Converts previews to WAV using FFmpeg  
 - Plays a random 15 second clip when pressed  
 - Displays fullscreen messages on HDMI  
-- Sends phone/browser push notifications using **ntfy.sh**  
+- Sends phone/browser push notifications using **slack**  
 - Auto-starts on boot using systemd  
 
 ---
@@ -54,12 +54,12 @@ cd DoorBell-Spotify
 pip3 install -r requirements.txt
 
 
-🔔 Setup ntfy Notifications
+🔔 Setup Slack Notifications
 1: Visit:
-https://ntfy.sh
+Slack.com
 
-2: Choose a topic name
-doorbell_home
+2: Create Webhook
+Example: https://hooks.slack.com/services/XXXXXXXXX/XXXXXXXXX/XXXXXXXXXXXXXXXXXXXXXXXX
 
 3: Copy env template:
 cp .env.example ~/.env
@@ -67,7 +67,7 @@ cp .env.example ~/.env
 4: nano ~/.env
 
 5: Change
-NTFY_URL=ntfy.sh/doorbell_home
+SLACK_WEBHOOK_URL=https://hooks.slack.com/services/YOUR/WEBHOOK/URL
 
 
 ⚡ Install System Services
@@ -91,16 +91,6 @@ After reboot the system will automatically:
 - Play random preview when pressed
 - Send push notifications
 
-  ---
-
-
-## 📱 Phone App Support
-
-ntfy apps is available on: Subscribe to your topic name.
-
-- Apple App Store
-- Google Play Store
-#### ntfy 
 
 ---
 
@@ -192,6 +182,7 @@ MIT License — Free to modify and share.
 #### ⭐ Credits
 
 Created by Joel Chicas & Sergio Minera
+
 
 
 
